@@ -83,6 +83,7 @@ section{
 	width: 104px;
 	text-align:end;
 }
+#thmbadv{display: none;}
 .big{
 	flex-wrap: nowrap;
 	align-items: stretch;
@@ -139,6 +140,7 @@ section{
 .adline{
 	margin: 10px auto;
 	text-align: center;
+	width: 100%;
 }
 #thmbpic1{background-image: url('./img/nasa.png')}
 #thmbpic2{background-image: url('./img/eu.png')}
@@ -176,24 +178,26 @@ footer .copy{order:2;align-self:center}
 @media screen and ( orientation: portrait) {
 h3{font-size: 45px;	}
 header{height: 200px;}
-.logo{font-size: 46px; width: 400px;}
-.logoCF{width: 90px; height: 90px;}
+.logo{font-size: 56px; width: 500px;margin-left: 100px;}
+.logoCF{width: 140px; height: 140px;}
 
-.ad, .adline, .sidead {display: none;}
+.ad, .adline, .sidead, #time {display: none;}
+#thmbadv{display:inline; }
 
 nav {font-size: 60px; padding:15px 0; text-align: center;}
-#time{display: none;}
 
 main{width: 95%;}
 .left{width: 100%;}
 
-.thumb{width: 45%; height: 400px;}
+.thmb{width: 48%; height: 450px; margin-bottom: 2%}
+.thmbtext{font-size:45px; }
 
 
 footer{
 	align-items: center;
 	font-size: 40px;
 }
+footer .logo{align-self:center;}
 #footernav{margin-top: 40px; }
 #footernav li {font-size: 40px; margin: 30px;}
 
