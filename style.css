@@ -38,12 +38,13 @@ header{
 
 nav{
 	background-color: black;
+	font-size: 22px;
 	padding:  5px 0px;
 }
 nav ul{margin:0; padding-left: 10px;}
-nav a:link { color: white; font-size: 22px; text-decoration: none; }
-nav a:hover { color: white; font-size: 22px; text-decoration: underline; }
-nav a:visited { color: white; font-size: 22px; text-decoration: none; }
+nav a:link { color: white;  text-decoration: none; }
+nav a:hover { color: white;  text-decoration: underline; }
+nav a:visited { color: white;  text-decoration: none; }
 nav li { display: inline;	padding-right: 10px;}
 
 
@@ -167,3 +168,30 @@ footer .copy{order:2;align-self:center}
 #footernav a:hover { color: white; text-decoration: underline; }
 #footernav a:visited { color: white; text-decoration: none; }
 #footernav li { display: inline;	padding-right: 10px;}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+@media screen and ( orientation: portrait) {
+header{height: 200px;}
+.logo{font-size: 46px; width: 400px;}
+.logoCF{width: 90px; height: 90px;}
+.ad{display: none;}
+nav {font-size: 60px; padding:15px 0; text-align: center;}
+nav li{padding-right: 20px;}
+#time{display: none;}
+
+main{width: 100%}
+
+.adline{display: none;}
+.sidead{display: none;}
+
+.thumb2{width: 50%;}
+
+footer{
+	align-items: center;
+	font-size: 40px;
+}
+.footernav{font-size: 2em;}
+
+
+}
