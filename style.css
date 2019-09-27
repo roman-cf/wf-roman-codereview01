@@ -1,0 +1,124 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: 'PT Sans Narrow', verdana, sans-serif;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	background-color: #5e1215;
+}
+.logo{
+	margin: 10px;
+	width: 200px; 
+	display: flex;
+	font-family: verdana;
+	font-weight: 800;
+	font-size: 23px;
+	color: white;
+
+}
+.logotext{
+	display: flex;
+	align-items: center;
+
+}
+.logoCF{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px; height: 45px;
+	background-color: #bf2524;
+	border-radius: 50%;
+}
+.ad{margin-right: 2%;	}
+
+nav{
+	background-color: black;
+	padding:  5px 0px;
+}
+nav ul{margin:0; padding-left: 10px;}
+nav a:link { color: white; font-size: 22px; text-decoration: none; }
+nav a:hover { color: white; font-size: 22px; text-decoration: underline; }
+nav a:visited { color: white; font-size: 22px; text-decoration: none; }
+nav li { display: inline;	padding-right: 10px;}
+
+
+main{	margin: 0 2%; }
+
+section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-bottom: 20px;
+
+}
+h3{
+	margin:0;
+	padding:0 0 0 9px;
+	color:#353535 ;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+#time{ width: 100%; padding-top: 10px; text-align:end; font-size: 15px;}
+.sectionheader{
+	margin: 8px 0;
+	background-color: lightgray;}
+
+.thmb, .thmb2{
+	width: 200px;
+	color: white;
+	background-color: black;
+
+}
+.thmb2{	width: 300px;}
+
+.thmbpic{
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+}
+.thmbpic2{height: 150px;
+	background-size: cover;
+	background-position: center;
+}
+.thmbtext{
+	padding-top: 9px;
+	padding-bottom: 4px;
+	padding-left: 12px;
+
+}
+.adline{
+	margin: 10px auto;
+	text-align: center;
+}
+#thmbpic1{background-image: url('./img/nasa.png')}
+#thmbpic2{background-image: url('./img/eu.png')}
+#thmbpic3{background-image: url('./img/jeff.png')}
+
+#thmbpicphone{background-image: url('./img/iphone.png')}
+
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	background-color: black;
+	color: white;
+}
+footer .logo{margin:30px 0; order:1;align-self:flex-end}
+footer .copy{order:2;align-self:center}
+#footernav {}
+#footernav ul{margin:0; padding-left: 10px;}
+#footernav a:link { color: white; text-decoration: none; }
+#footernav a:hover { color: white; text-decoration: underline; }
+#footernav a:visited { color: white; text-decoration: none; }
+#footernav li { display: inline;	padding-right: 10px;}
