@@ -47,15 +47,34 @@ nav a:visited { color: white; font-size: 22px; text-decoration: none; }
 nav li { display: inline;	padding-right: 10px;}
 
 
-main{	margin: 0 2%; }
+main{	margin: auto; 
+	width: 800px;
+}
 
 section{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: stretch;
 	margin-bottom: 20px;
+}
+.left{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.sidead{
+	width: 20%;
+	text-align:center;
+}
+.big{
+	flex-wrap: nowrap;
+	align-items: stretch;
 
+}
+.block{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 h3{
 	margin:0;
@@ -68,15 +87,20 @@ h3{
 #time{ width: 100%; padding-top: 10px; text-align:end; font-size: 15px;}
 .sectionheader{
 	margin: 8px 0;
+	width: 100%;
 	background-color: lightgray;}
 
 .thmb, .thmb2{
+	margin-bottom: 20px;
 	width: 200px;
 	color: white;
 	background-color: black;
 
 }
-.thmb2{	width: 300px;}
+.thmb2{	
+	width: 40%;
+	margin: 2%;
+}
 
 .thmbpic{
 	height: 100px;
@@ -91,8 +115,14 @@ h3{
 	padding-top: 9px;
 	padding-bottom: 4px;
 	padding-left: 12px;
-
 }
+.thmbtext2{
+	padding-top: 14px;
+	padding-bottom: 8px;
+	padding-left: 18px;
+	font-size: 18px;
+}
+
 .adline{
 	margin: 10px auto;
 	text-align: center;
@@ -100,14 +130,21 @@ h3{
 #thmbpic1{background-image: url('./img/nasa.png')}
 #thmbpic2{background-image: url('./img/eu.png')}
 #thmbpic3{background-image: url('./img/jeff.png')}
+#thmbpic4{background-image: url('./img/polar.png')}
+#thmbpic5{background-image: url('./img/musk.jpg')}
+#thmbpic6{background-image: url('./img/snowden.jpg')}
+
 
 #thmbpicphone{background-image: url('./img/iphone.png')}
-
+#thmbsmart{background-image: url('./img/smart.png')}
+#thmbone{background-image: url('./img/one.png')}
+#thmbphone{background-image: url('./img/phone.png')}
 
 footer{
 	display: flex;
 	flex-direction: column;
 	align-items: start;
+	margin-top: 20px;
 	padding-top: 15px;
 	padding-left: 10px;
 	padding-bottom: 10px;
