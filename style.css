@@ -43,7 +43,7 @@ header{
 	align-items: center;
 	justify-content: center;
 	width: 45px; height: 45px;
-	background-color: #bf2524;
+	background-color: #bf2524;	
 	border-radius: 50%;
 }
 .ad{margin-right: 2%;	}
@@ -75,6 +75,7 @@ section{
 }
 .left{
 	width: 680px;
+	padding-right: 3px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -100,7 +101,7 @@ section{
 
 .thmb{
 	width: 210px;
-	height: 180px;
+	height: 170px;
 
 	color: white;
 	background-color: black;
@@ -116,21 +117,22 @@ section{
 }
 
 .thmbpic{
-	height: 60%;
+	height: 65%;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 }
+.thmbpic img{width:  100%; object-fit: cover; }
 .thmbpic2{
 	height: 70%;
 	background-size: cover;
 	background-position: center;
 }
 .thmbtext{
-	height: 40%;
-	padding-top: 9px;
-	padding-bottom: 4px;
-	padding-left: 12px;
+	height: 35%;
+	padding: 4px;
 	text-decoration: none;
+	font-stretch: condensed;
 }
 .thmbtext2{
 	padding: 14px 18px;
@@ -142,13 +144,6 @@ section{
 	text-align: center;
 	width: 100%;
 }
-#thmbpic1{background-image: url('./img/nasa.png')}
-#thmbpic2{background-image: url('./img/eu.png')}
-#thmbpic3{background-image: url('./img/jeff.png')}
-#thmbpic4{background-image: url('./img/polar.png')}
-#thmbpic5{background-image: url('./img/musk.jpg')}
-#thmbpic6{background-image: url('./img/snowden.jpg')}
-
 
 #thmbpicphone{background-image: url('./img/iphone.png')}
 #thmbsmart{background-image: url('./img/smart.png')}
@@ -190,8 +185,8 @@ main{width: 95%;}
 .left{width: 100%;}
 
 .thmb{width: 48%; height: 450px; margin-bottom: 2%}
-.thmbtext{font-size:45px; }
-
+.thmbtext{font-size:40px; font-stretch: condensed; }
+.thmb2{width: 45%; margin-bottom: 33%;}
 
 footer{
 	align-items: center;
