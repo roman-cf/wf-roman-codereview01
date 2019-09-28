@@ -94,6 +94,7 @@ section{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-right: 2%;
 }
 
 
@@ -101,16 +102,15 @@ section{
 
 .thmb{
 	width: 210px;
-	height: 170px;
+	height: 160px;
 
 	color: white;
 	background-color: black;
 
 }
 .thmb2{	
-	width: 45%;
+	width: 48%;
 	height: 45%;
-	margin: 2%;
 
 	color: white;
 	background-color: black;
@@ -131,6 +131,7 @@ section{
 .thmbtext{
 	height: 35%;
 	padding: 4px;
+	font-size: 14px;
 	text-decoration: none;
 	font-stretch: condensed;
 }
@@ -170,23 +171,24 @@ footer .copy{order:2;align-self:center}
 
 
 /*--------------------------------------------------------------------------------------------------*/
-@media screen and ( orientation: portrait) {
+@media only screen and ( orientation: portrait), (max-width: 480px) {
 h3{font-size: 45px;	}
 header{height: 200px;}
 .logo{font-size: 56px; width: 500px;margin-left: 100px;}
 .logoCF{width: 140px; height: 140px;}
 
 .ad, .adline, .sidead, #time {display: none;}
-#thmbadv{display:inline; }
+#thmbadv{display:inline;width: 48%;  }
+
 
 nav {font-size: 60px; padding:15px 0; text-align: center;}
 
 main{width: 95%;}
 .left{width: 100%;}
 
-.thmb{width: 48%; height: 450px; margin-bottom: 2%}
-.thmbtext{font-size:40px; font-stretch: condensed; }
-.thmb2{width: 45%; margin-bottom: 33%;}
+.thmb{width: 48%; height: 400px; margin-bottom: 2%;}
+.thmbtext, .thmbtext2{font-size:36px; font-stretch: condensed; }
+.thmb2{width: 48%; height: 400px; margin-bottom: 2%;}
 
 footer{
 	align-items: center;
