@@ -12,10 +12,9 @@ h3{
 	font-size: 24px;
 }
 
-a:link { color: white;  text-decoration: none; }
-a:hover { color: white;  text-decoration: none; }
-a:visited { color: white;  text-decoration: none; }
+a:link, a:hover, a:visited { color: white;  text-decoration: none; }
 
+/*---------------------------------------------------------*/
 header{
 	display: flex;
 	justify-content: space-between;
@@ -53,12 +52,19 @@ nav{
 	font-size: 22px;
 	padding:  5px 0px;
 }
-nav ul{margin:0; padding-left: 10px;}
-nav a:hover { text-decoration: underline; }
-nav li { display: inline;	padding-right: 10px;}
+nav ul{
+	margin:0; 
+	padding-left: 10px;
+}
+nav a:hover {text-decoration: underline; }
+nav li {
+	display: inline;
+ 	padding-right: 10px;
+}
 
-
-main{	margin: auto; 
+/*---------------------------------------------------------*/
+main{
+	margin: auto; 
 	width: 800px;
 }
 
@@ -70,7 +76,8 @@ main{	margin: auto;
 section{
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 8px; margin-bottom: 20px;
+	margin-top: 8px;
+	margin-bottom: 20px;
 	justify-content: space-between;
 }
 .left{
@@ -96,33 +103,36 @@ section{
 	justify-content: space-between;
 	margin-right: 2%;
 }
-
-
-#time{ width: 100%; padding-top: 10px; text-align:end; font-size: 15px;}
-
+#time{
+	width: 100%; 
+	padding-top: 10px; 
+	text-align:end; 
+	font-size: 15px;
+}
+/*---------------------------------------------------------*/
 .thmb{
 	width: 210px;
 	height: 160px;
 
 	color: white;
 	background-color: black;
-
 }
 .thmb2{	
 	width: 48%;
 	height: 45%;
-
 	color: white;
 	background-color: black;
 }
-
 .thmbpic{
 	height: 65%;
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
 }
-.thmbpic img{width:  100%; object-fit: cover; }
+.thmbpic img{
+	width:  100%; 
+	object-fit: cover;
+}
 .thmbpic2{
 	height: 70%;
 	background-size: cover;
@@ -145,12 +155,12 @@ section{
 	text-align: center;
 	width: 100%;
 }
-
+/*---------------------------------------------------------*/
 #thmbpicphone{background-image: url('./img/iphone.png')}
 #thmbsmart{background-image: url('./img/smart.png')}
 #thmbone{background-image: url('./img/one.png')}
 #thmbphone{background-image: url('./img/phone.png')}
-
+/*---------------------------------------------------------*/
 footer{
 	display: flex;
 	flex-direction: column;
@@ -162,40 +172,84 @@ footer{
 	background-color: black;
 	color: white;
 }
-footer .logo{margin:30px 0; order:1;align-self:flex-end}
-footer .copy{order:2;align-self:center}
-#footernav {height: 30px;}
-#footernav ul{margin:0; padding-left: 10px;}
-#footernav a:hover { color: white; text-decoration: underline; }
-#footernav li { display: inline;	padding-right: 20px;}
-
-
-/*--------------------------------------------------------------------------------------------------*/
-@media only screen and ( orientation: portrait), (max-width: 480px) {
-h3{font-size: 45px;	}
-header{height: 200px;}
-.logo{font-size: 56px; width: 500px;margin-left: 100px;}
-.logoCF{width: 140px; height: 140px;}
-
-.ad, .adline, .sidead, #time {display: none;}
-#thmbadv{display:inline;width: 48%;  }
-
-
-nav {font-size: 60px; padding:15px 0; text-align: center;}
-
-main{width: 95%;}
-.left{width: 100%;}
-
-.thmb{width: 48%; height: 400px; margin-bottom: 2%;}
-.thmbtext, .thmbtext2{font-size:36px; font-stretch: condensed; }
-.thmb2{width: 48%; height: 400px; margin-bottom: 2%;}
-
-footer{
-	align-items: center;
-	font-size: 40px;
+footer .logo{
+	margin:30px 0; 
+	order:1;
+	align-self:flex-end
 }
-footer .logo{align-self:center;}
-#footernav{margin-top: 40px; }
-#footernav li {font-size: 40px; margin: 30px;}
+footer .copy{
+	order:2;
+	align-self:center
+}
+#footernav {height: 30px;}
+#footernav ul{
+	margin:0; 
+	padding-left: 10px;
+}
+#footernav a:hover {
+	color: white; 
+	text-decoration: underline;
+}
+#footernav li {
+	display: inline;	
+	padding-right: 20px;
+}
 
+/*--------------------------------------mobilfriendly------------------------------------------------------------*/
+@media screen and ( orientation: portrait), (max-width: 480px) {
+	h3{font-size: 45px;	}
+	
+	header{height: 200px;}
+	
+	.logo{
+		font-size: 56px;
+		width: 500px;
+		margin-left: 100px;
+	}
+	.logoCF{
+		width: 140px;
+		height: 140px;
+	}
+
+	.ad, .adline, .sidead, #time {display: none;}
+
+	#thmbadv{
+		display:inline;
+		width: 48%;
+	}
+
+	nav {
+		font-size: 60px; 
+		padding:15px 0; 
+		text-align: center;
+	}
+
+	main{width: 95%;}
+
+	.left{width: 100%;}
+
+	.thmb, .thmb2{
+		width: 48%; 
+		height: 400px;
+		margin-bottom: 2%;
+	}
+	.thmbtext, .thmbtext2{
+		font-size:36px; 
+		font-stretch: condensed;
+	}
+
+	footer{
+		align-items: center;
+		font-size: 40px;
+	}
+	footer .logo{
+		align-self:center;
+	}
+	#footernav{
+		margin-top: 40px; 
+	}
+	#footernav li {
+		font-size: 40px;
+		margin: 30px;
+	}
 }
